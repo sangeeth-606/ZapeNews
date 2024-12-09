@@ -1,41 +1,25 @@
-// import React from 'react'
-
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light  navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#"> <span className="badge bg-dark text-white" >ZapeNews</span> </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <nav className="navbar navbar-dark bg-dark px-4">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <a className="navbar-brand" href="/">
+          <span className="badge bg-danger fs-5">ZapeNews</span>
+        </a>
+        <div className="d-flex gap-4">
+          <a className="text-white text-decoration-none" href="/">Home</a>
+          <a className="text-white text-decoration-none" href="/business">Business</a>
+          <a className="text-white text-decoration-none" href="/technology">Technology</a>
+          <a className="text-white text-decoration-none" href="/sports">Sports</a>
         </div>
+        <form className="d-flex">
+          <input 
+            className="form-control me-2" 
+            type="search" 
+            placeholder="Search news..." 
+            aria-label="Search"
+          />
+          <button className="btn btn-danger" type="submit">Search</button>
+        </form>
       </div>
     </nav>
   )
